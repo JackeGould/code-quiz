@@ -8,8 +8,6 @@
 // .addEventListener (click, start game, view high score, submit initials, restart, clear score)
 // Timer goes down 10 ADDITIONAL seconds when you answer incorrectly, timer is continuous
 
-
-
 var questions = [
     {
         question: 'What is the correct JavaScript syntax to change the content of the following HTML element? <p id="demo">This is a demonstration.</p>',
@@ -118,3 +116,36 @@ function startGame() {
  };
  
  // Without further code, when you click 'Start Quiz' you will see 'Question' as a header and four buttons labeled 'Answer 1, Answer 2, Answer 3, Answer 4'. User is unable to click an answer, but hover works.
+
+ // Go to next question, calling function resetState which still needs to be defined
+function setNextQuestion() {
+    resetState();
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
+ };
+
+// Display questions with function showQuestions calling variable question array that was defined at the top of the code. 
+function showQuestion(question) {
+   questionEl.innerText = question.question
+   question.answers.forEach(answer => {
+       var button = document.createElement("button")
+       button.innerText = answer.text
+       button.classList.add("btn")
+       if (answer.correct) {
+           button.dataset.correct = answer.correct
+       }
+       button.addEventListener("click", selectAnswer)
+       answerButtonsEl.appendChild(button)
+   })
+};
+
+ // Reset state function (called in setNextQuestion function)
+function resetState() {
+    //clearStatusClass(document.body)
+    nextButton.classList.add("hide")
+    checkAnswerEl.classList.add("hide")
+    while (answerButtonsEl.firstChild) {
+        answerButtonsEl.removeChild
+            (answerButtonsEl.firstChild)
+    }
+ };
+ 

@@ -26,7 +26,7 @@ Then information added will be saved
 
 The following image demonstrates the web application's appearance and functionality:
 
-
+![The code quiz application includes a view high scores page, a timer, and sections with questions/answers.](./assets/images/Screenshot.png)\
 
 ## Deployment
 
