@@ -28,7 +28,7 @@ The following image demonstrates the web application's appearance and functional
 
 ![The code quiz application includes a view high scores page, a timer, and sections with questions/answers.](./assets/images/Screenshot.png)\
 
-*** I used multiple sources to complete what I have provided in the assignment. Stack overflow, Google, ChatGPT, and class mates. I am still trying to understand more of this project and this code which is why there are so many comments / it is not complete. I have a tutoring session scheduled in hopes of resubmitting the assignment with final code and a better understanding of the material.
+*** I used multiple sources to complete what I have provided in the assignment. Stack overflow, Google, ChatGPT, and class mates, and tutoring.
 
 ## Deployment
 
